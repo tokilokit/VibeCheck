@@ -33,11 +33,11 @@
 var list = ["a","b"];
 
 $( "#but" ).click(function() {
-    if (Math.floor(Math.random()*2)) {
+    if (Math.random() < 0.3) {
 
-        $("#displayme").html('<img src="https://i.ibb.co/60XKq4G/IMG-2715.jpg" width="500" height="500" border="0"> </img>');
-    } else {
         $("#displayme").html('<img src="https://i.ibb.co/Ky4D6rx/IMG-2714.jpg width="500" height="500" border="0"> </img>');
+    } else {
+        $("#displayme").html('<img src="https://i.ibb.co/60XKq4G/IMG-2715.jpg" width="500" height="500" border="0"> </img>');
     }
 });
 </script>
